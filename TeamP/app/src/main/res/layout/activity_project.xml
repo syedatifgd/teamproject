@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/awaitinguserfinal"
+    android:orientation="vertical"
+    tools:context="com.example.syedatifhussain.myapplication.ProjectActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayoutProject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationViewProject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            app:menu="@menu/menu_meeting_panel">
+
+
+        </android.support.design.widget.NavigationView>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <TextView
+        android:id="@+id/txtUID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="UID"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <TextView
+        android:id="@+id/txtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Password"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnSendEmailToEndUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtPass"
+        android:layout_alignStart="@+id/txtPass"
+        android:layout_marginTop="340dp"
+        android:backgroundTint="@color/transparent"
+        android:clickable="true"
+        android:src="@drawable/ic_email_black_24dp" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pb">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewShowStoriesToAddBacklog"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnSaveBackLog"
+        android:layout_marginBottom="2dp"
+        android:clipToPadding="true" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/btnSaveBackLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView38"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:backgroundTint="@color/transparent" />
+
+    <Button
+        android:id="@+id/btnSaveBackLogFinal"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnSaveBackLog"
+        android:layout_alignParentBottom="true"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclerViewShowStoriesToAddBacklog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:height="50dp"
+        android:text="Sprint Stories"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewProjectBacklogStories"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView34"
+        android:layout_above="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSaveBackLogFinal"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp" />
+
+</RelativeLayout>

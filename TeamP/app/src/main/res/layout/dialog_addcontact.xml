@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/txtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_below="@+id/textView24"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/rightroundxd"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="phone"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/FirebaseUI.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtPhone"
+            android:layout_alignLeft="@+id/txtPhone"
+            android:layout_alignRight="@+id/txtPhone"
+            android:layout_alignStart="@+id/txtPhone"
+            android:layout_below="@+id/txtPhone"
+            android:layout_marginTop="51dp"
+            android:text="Add" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtPhone"
+            android:layout_marginTop="43dp"
+            android:text="Number"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSubmit"
+            android:layout_marginTop="44dp"
+            android:layout_toStartOf="@+id/btnSubmit" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

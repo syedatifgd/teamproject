@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/selectnextmeeting">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageButton
+            android:id="@+id/btnSprintMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/transparent"
+            android:clickable="true"
+            app:srcCompat="@drawable/baseline_restore_black_48dp" />
+
+        <ImageButton
+            android:id="@+id/btnReviewMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/transparent"
+            android:clickable="true"
+            app:srcCompat="@drawable/baseline_rate_review_black_48dp" />
+
+        <ImageButton
+            android:id="@+id/btnRetrospectiveMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btnReviewMeeting"
+            android:backgroundTint="@color/transparent"
+            android:clickable="true"
+            app:srcCompat="@drawable/baseline_people_black_48dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnSprintMeeting"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/btnReviewMeeting"
+            android:text="Sprint"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnReviewMeeting"
+            android:layout_toStartOf="@+id/btnRetrospectiveMeeting"
+            android:text="Review"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnRetrospectiveMeeting"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/btnReviewMeeting"
+            android:text="Retrospective"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnLearnMoreMeetings"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_marginTop="50dp"
+        android:text="Learn More" />
+
+
+</RelativeLayout>

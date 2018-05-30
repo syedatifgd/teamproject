@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/specifydetails"
+    android:orientation="vertical"
+    tools:context="com.example.syedatifhussain.myapplication.Signup2">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_above="@+id/btnCompleteSignUp2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp"
+            android:id="@+id/relativeLayout">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/uImageContacts"
+                android:layout_width="190dp"
+                android:layout_height="125dp"
+                android:layout_above="@+id/editTextUserNameSignUp2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:src="@drawable/contactsicon"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnSendMessage" />
+
+            <ImageButton
+                android:id="@+id/btnEditProfileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:elevation="7dp"
+                android:tint="@color/linkColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/uImageContacts2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.481"
+                app:srcCompat="@drawable/ic_brush_black_24dp"
+                android:layout_marginBottom="21dp"
+                android:layout_above="@+id/editTextUserNameSignUp2"
+                android:layout_alignEnd="@+id/uImageContacts" />
+
+            <EditText
+                android:id="@+id/editTextUserNameSignUp2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rightroundxd"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editTextOrganizationIDSignUp2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/editTextUserNameSignUp2"
+                android:layout_below="@+id/textView21"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/rightroundxd"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editTextOrganizationCodeSignUp2New"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/editTextOrganizationIDSignUp2"
+                android:layout_below="@+id/textView22"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rightroundxd"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/editTextUserNameSignUp2"
+                android:layout_marginTop="250dp"
+                android:text="Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editTextOrganizationIDSignUp2"
+                android:layout_below="@+id/editTextUserNameSignUp2"
+                android:layout_marginTop="13dp"
+                android:text="Organization ID"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editTextOrganizationCodeSignUp2New"
+                android:layout_below="@+id/editTextOrganizationIDSignUp2"
+                android:layout_marginTop="10dp"
+                android:text="Organization Code"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCompleteSignUp2"
+                style="@style/FirebaseUI.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="510dp"
+                android:text="Submit"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

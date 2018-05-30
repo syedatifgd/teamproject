@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/joinprojectfinal"
+    android:orientation="vertical"
+    tools:context="com.example.syedatifhussain.myapplication.JoinProject">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextProjectKey"
+        android:layout_alignStart="@+id/editTextProjectKey"
+        android:layout_marginBottom="13dp"
+        android:text="Project Key"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <EditText
+        android:id="@+id/editTextProjectKey"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/rightroundxd"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="9dp"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/btnSubmitJoin"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnSubmitJoin"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginBottom="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editTextProjectKey"
+        android:layout_alignEnd="@+id/editTextProjectKey" />
+
+    <EditText
+        android:id="@+id/editTextProjectIDJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_alignStart="@+id/editTextProjectKey"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/rightroundxd"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="9dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Project ID"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/editTextProjectIDJoin"
+        android:layout_alignStart="@+id/editTextProjectIDJoin" />
+</RelativeLayout>

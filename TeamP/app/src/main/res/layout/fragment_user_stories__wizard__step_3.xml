@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/userstorycreation3"
+    tools:context="com.example.syedatifhussain.myapplication.UserStories_Wizard_Step_3">
+
+
+    <SeekBar
+        android:id="@+id/seekBarSetStoryPriorityFragment"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="2"
+        android:progress="3"
+        android:layout_marginTop="255dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignRight="@+id/textView15"
+        android:layout_alignEnd="@+id/textView15" />
+
+    <Button
+        android:id="@+id/btnSaveAddFragment"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save and Add"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/seekBarSetStoryPriorityFragment"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnFinalAddFragment"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnSaveAddFragment"
+        android:layout_alignLeft="@+id/btnSaveAddFragment"
+        android:layout_alignRight="@+id/btnSaveAddFragment"
+        android:layout_alignStart="@+id/btnSaveAddFragment"
+        android:layout_below="@+id/btnSaveAddFragment"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Proceed" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:text="TextView"
+        android:layout_above="@+id/seekBarSetStoryPriorityFragment"
+        android:layout_toLeftOf="@+id/btnSaveAddFragment"
+        android:layout_toStartOf="@+id/btnSaveAddFragment"
+        android:layout_marginBottom="88dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginEnd="55dp" />
+
+    <TextView
+        android:id="@+id/txtPriorityFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/seekBarSetStoryPriorityFragment"
+        android:layout_alignLeft="@+id/seekBarSetStoryPriorityFragment"
+        android:layout_alignRight="@+id/seekBarSetStoryPriorityFragment"
+        android:layout_alignStart="@+id/seekBarSetStoryPriorityFragment"
+        android:layout_marginTop="220dp"
+        android:text="Priority"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

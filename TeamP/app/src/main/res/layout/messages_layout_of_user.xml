@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:weightSum="10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/messages_profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="1dp"
+        android:src="@drawable/baseline_person_white_24dp" />
+
+    <ImageView
+        android:id="@+id/message_own_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/message_text_owntext"
+        android:layout_below="@+id/message_image_layout"
+        android:layout_marginLeft="0dp"
+        android:layout_toEndOf="@+id/textView27"
+        android:adjustViewBounds="true"
+        android:padding="0dp"
+        android:clickable="true"
+        android:scaleType="fitStart" />
+
+    <TextView
+        android:id="@+id/time_own_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="00:00"
+        android:textSize="12sp"
+        android:layout_above="@+id/message_text_owntext"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/message_text_owntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/time_text_layout"
+        android:layout_marginLeft="10dp"
+        android:padding="7dp"
+        android:textColor="#444444"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="7dp"
+        android:text="Message Text"
+        android:textColor="#444444"
+        android:textSize="14sp"
+        android:layout_below="@+id/time_text_layout"
+        android:layout_toEndOf="@+id/messages_profile_image" />
+
+    <TextView
+        android:id="@+id/time_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="00:00"
+        android:textSize="12sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/messages_profile_image" />
+
+    <ImageView
+        android:id="@+id/message_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView27"
+        android:layout_alignStart="@+id/message_text"
+        android:layout_below="@+id/message_text"
+        android:layout_marginLeft="0dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:padding="0dp"
+        android:scaleType="fitStart" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/message_image_layout"
+        android:layout_marginStart="60dp"
+        android:layout_toEndOf="@+id/message_text" />
+
+
+</RelativeLayout>

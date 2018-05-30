@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/userstorycreation"
+    tools:context="com.example.syedatifhussain.myapplication.UserStories_Wizard_Step_1">
+
+
+    <EditText
+        android:id="@+id/editTextStoryNameFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="203dp"
+        android:background="@drawable/rightroundxd"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextStoryDescriptionFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editTextStoryNameFragment"
+        android:layout_alignStart="@+id/editTextStoryNameFragment"
+        android:layout_below="@+id/editTextStoryNameFragment"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rightroundxd"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnNextStepUserStories"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextStoryDescriptionFragment"
+        android:layout_alignLeft="@+id/editTextStoryDescriptionFragment"
+        android:layout_alignRight="@+id/editTextStoryDescriptionFragment"
+        android:layout_alignStart="@+id/editTextStoryDescriptionFragment"
+        android:layout_below="@+id/editTextStoryDescriptionFragment"
+        android:layout_marginTop="50dp"
+        android:text="Next" />
+</RelativeLayout>

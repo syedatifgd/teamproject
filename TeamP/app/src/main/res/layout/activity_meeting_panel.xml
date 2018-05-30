@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.syedatifhussain.myapplication.MeetingPanel">
+
+    <include
+        android:id="@+id/chat_app_bar"
+        style="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:id="@+id/drawerLayout"
+        android:layout_below="@+id/chat_app_bar">
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:id="@+id/navigationViewMeetingPanel"
+            app:menu="@menu/menu_meeting_panel">
+
+
+        </android.support.design.widget.NavigationView>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="56dp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeMeetingPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/textView17"
+        android:layout_marginBottom="10dp">
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/optionsMeetingPanelChat"
+            android:layout_width="50dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:src="@drawable/ic_format_list_bulleted_black_24dp"
+            android:tint="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/input_message_meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.76"
+            android:background="@drawable/rightroundxd"
+            android:ems="10"
+            android:hint="Write a message"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btnSendMessageMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_weight="0.14"
+            android:background="@color/transparent"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_send_black_24dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnProjectInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/drawerLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/transparent"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_info_black_24dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/backlogstories_meeting_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/swipeMeetingPanel"
+        android:layout_below="@+id/chat_app_bar"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@+id/textView17" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerviewpanelmessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backlogstories_meeting_panel"
+        android:layout_toEndOf="@+id/textView17"
+        android:layout_above="@+id/textView18" />
+
+</RelativeLayout>

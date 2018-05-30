@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.syedatifhussain.myapplication.CreateProject"
+    android:background="@drawable/createprojectfinal"
+    android:orientation="vertical"
+
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout5">
+
+        <EditText
+            android:id="@+id/editTextProjectCode"
+            android:layout_width="225dp"
+            android:layout_height="43dp"
+            android:layout_above="@+id/editTextProjectDescription"
+            android:layout_alignLeft="@+id/editTextProjectDescription"
+            android:layout_alignStart="@+id/editTextProjectDescription"
+            android:layout_marginBottom="31dp"
+            android:background="@drawable/rightroundxd"
+            android:editable="false"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="253dp" />
+
+        <ImageButton
+            android:id="@+id/btnAddMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:layout_editor_absoluteY="355dp"
+            tools:layout_editor_absoluteX="152dp"
+            android:layout_marginBottom="23dp"
+            android:layout_above="@+id/btnCreateProject"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnCreateProject"
+            style="@style/FirebaseUI.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:text="Proceed"
+            tools:layout_editor_absoluteY="516dp"
+            tools:layout_editor_absoluteX="136dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/editTextProjectName"
+            android:layout_width="227dp"
+            android:layout_height="42dp"
+            android:layout_above="@+id/editTextProjectCode"
+            android:layout_alignLeft="@+id/editTextProjectCode"
+            android:layout_alignStart="@+id/editTextProjectCode"
+            android:layout_marginBottom="37dp"
+            android:background="@drawable/rightroundxd"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="147dp" />
+
+        <EditText
+            android:id="@+id/editTextProjectDescription"
+            android:layout_width="225dp"
+            android:layout_height="43dp"
+            android:layout_above="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="47dp"
+            android:background="@drawable/rightroundxd"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="253dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnAddMembers"
+            android:layout_alignEnd="@+id/editTextProjectDescription"
+            android:layout_alignLeft="@+id/editTextProjectDescription"
+            android:layout_alignRight="@+id/editTextProjectDescription"
+            android:layout_alignStart="@+id/editTextProjectDescription"
+            android:layout_marginBottom="17dp"
+            android:text="Add Members"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Project Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/editTextProjectName"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Key"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/editTextProjectCode"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Project Description"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/editTextProjectDescription"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

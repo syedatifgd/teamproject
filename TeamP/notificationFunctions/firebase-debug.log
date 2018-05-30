@@ -1,0 +1,25 @@
+[debug] [2018-05-28T02:15:38.005Z] ----------------------------------------------------------------------
+[debug] [2018-05-28T02:15:38.008Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Syed Atif Hussain\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-05-28T02:15:38.008Z] CLI Version:   3.18.5
+[debug] [2018-05-28T02:15:38.008Z] Platform:      win32
+[debug] [2018-05-28T02:15:38.008Z] Node Version:  v8.11.2
+[debug] [2018-05-28T02:15:38.008Z] Time:          Mon May 28 2018 07:15:38 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-05-28T02:15:38.008Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-28T02:15:38.016Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-05-28T02:15:38.016Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Syed Atif Hussain\AndroidStudioProjects\MyApplication2\notificationFunctions
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
