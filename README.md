@@ -6,7 +6,7 @@ This respository hosts the open source code of my fyp. Additional info on creden
 If you wish to contribute to the project and make it better, please feel free to do so.
 
 The app uses :
-  Google Firebase
-  OpenTok
-  Heroku Server
+  Google Firebase,
+  OpenTok,
+  Heroku Server.
   
