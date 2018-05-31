@@ -1,4 +1,4 @@
-# teamproject
+# Team Project for RealTime collaboration between the team members and product owner.
 Final Year Project 2018
 Computer Science
 
