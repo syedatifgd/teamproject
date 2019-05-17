@@ -9,4 +9,6 @@ The app uses :
   Google Firebase,
   OpenTok,
   Heroku Server.
-  
+
+Application Technology Stack : 
+Android Native
